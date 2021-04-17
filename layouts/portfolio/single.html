@@ -32,22 +32,19 @@
         </p>
         <div class="case-details-info">
           <div class="case-details-info-item">
-            <h5 class="text-light">Client</h5>
+            <h5 class="text-light">Duration</h5>
             <p>{{ .Params.client }}</p>
           </div>
           <div class="case-details-info-item">
-            <h5>Service</h5>
+            <h5>Difficulty</h5>
             <p>{{ .Params.service }}</p>
           </div>
-          <div class="case-details-info-item">
-            <h5>Date</h5>
-            <p>{{ .PublishDate.Format "January 2, 2006" }}</p>
           </div>
         </div>
         <div class="row mb-5">
           <div class="col-lg-6">
             <div class="case-details-service">
-              <h3>Challenge</h3>
+              <h3>Highlight</h3>
               <p>
                 {{ .Params.challenge }}
               </p>
@@ -55,7 +52,7 @@
           </div>
           <div class="col-lg-6">
             <div class="case-details-service">
-              <h3>Solution</h3>
+              <h3>Highlight</h3>
               <p>
                 {{ .Params.solution }}
               </p>
@@ -82,7 +79,7 @@
               </svg>
             </div>
             <div class="content">
-              <span class="small">Prev case</span>
+              <span class="small">Prev trip</span>
               <h5 class="title"><a class="text-dark"
                   href="{{ .PrevInSection.Permalink }}">{{ .PrevInSection.Title }}</a></h5>
             </div>
@@ -108,7 +105,7 @@
           {{ if .NextInSection }}
           <div class="next d-flex align-items-center">
             <div class=" content text-right">
-              <span class="small">Next case</span>
+              <span class="small">Next trip</span>
               <h5 class="title">
                 <a class="text-dark" href="{{ .NextInSection.Permalink }}">{{ .NextInSection.Title }}</a>
               </h5>
